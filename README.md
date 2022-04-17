@@ -1,11 +1,14 @@
 # bitcoin-testnet-box
 [![docker pulls](https://img.shields.io/docker/pulls/freewil/bitcoin-testnet-box.svg?style=flat)](https://hub.docker.com/r/freewil/bitcoin-testnet-box/)
 
-Create your own private bitcoin testnet
+Create your own private verus testnet
 
-You must have `bitcoind` and `bitcoin-cli` installed on your system and in the
-path unless running this within a [Docker](https://www.docker.com) container
-(see [below](#using-with-docker)).
+Before running the scripts make sure you have linked `verusd` and `verusd` by using (run this from the verus binaries folder):
+```
+ln ./verus /usr/bin/verus
+ln ./verusd /usr/bin/verusd
+```
+Or alternatively move the `verus` and `verusd` binaries to this folder.
 
 ## Large Git History
 If you'd like to clone this git repository locally and disk space or bandwidth
